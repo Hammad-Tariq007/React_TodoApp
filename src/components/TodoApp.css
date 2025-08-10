@@ -1,0 +1,208 @@
+/* todo-app.css */
+
+:root {
+  --color-primary: #2f80ed;
+  --color-primary-dark: #1366d6;
+  --color-text: #222;
+  --color-muted-text: #666;
+  --color-background: #f9fafb;
+  --color-white: #fff;
+  --color-border: #ddd;
+  --color-danger: #e74c3c;
+  --color-success: #27ae60;
+  --color-button-hover: #1b4f9b;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+.todo-app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem 2.5rem;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+  color: var(--color-primary-dark);
+}
+
+.input-add-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1.8px solid var(--color-border);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+}
+
+.todo-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.add-button {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  box-shadow: 0 3px 6px rgba(47, 128, 237, 0.4);
+}
+
+.add-button:disabled {
+  background-color: #a1c6ff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.add-button:not(:disabled):hover {
+  background-color: var(--color-button-hover);
+}
+
+.todos-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+}
+
+.empty-message {
+  color: var(--color-muted-text);
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 12px rgba(47, 128, 237, 0.15);
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.todo-text-container {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.todo-text {
+  font-size: 1rem;
+  color: var(--color-text);
+  user-select: none;
+  word-break: break-word;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: var(--color-muted-text);
+  font-style: italic;
+}
+
+.todo-edit-input {
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-primary);
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.todo-edit-input:focus {
+  outline: none;
+  border-color: var(--color-primary-dark);
+}
+
+.btn {
+  border: 1.5px solid var(--color-border);
+  background: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.save-btn {
+  border-color: var(--color-success);
+}
+
+.save-btn:hover {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.cancel-btn {
+  border-color: var(--color-muted-text);
+}
+
+.cancel-btn:hover {
+  background-color: var(--color-muted-text);
+  border-color: var(--color-muted-text);
+  color: var(--color-white);
+}
+
+.edit-btn {
+  border-color: var(--
