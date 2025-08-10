@@ -13,7 +13,7 @@ A modern, minimalistic Todo List application built with **React** demonstrating 
 
 ## Demo
 
-![App Screenshot](./screenshot.png)  
+![App Screenshot](https://ibb.co/hJkybBpN)  
 *(Add your screenshot or GIF here to showcase the app)*
 
 ---
