@@ -1,12 +1,70 @@
-# React + Vite
+# React Todo App — Sleek & Functional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimalistic Todo List application built with **React** demonstrating core CRUD functionality:
 
-Currently, two official plugins are available:
+- Add new todos
+- Edit existing todos inline
+- Delete todos from active or completed lists
+- Mark todos as complete with checkbox (moves between lists)
+- Restore completed todos back to active
+- Clean separation of **active** and **previous/completed** todos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](./screenshot.png)  
+*(Add your screenshot or GIF here to showcase the app)*
+
+---
+
+## Features
+
+- **Add todos** with input and button or by pressing Enter
+- **Edit todos** inline with save/cancel options
+- **Delete todos** from either active or previous lists
+- **Complete todos** by checking checkbox, moving them to previous list with strikethrough styling
+- **Restore todos** from previous back to active
+- Responsive, clean UI with focus on usability and minimalism
+
+---
+
+## Technologies Used
+
+- React (with hooks: `useState`)
+- Functional components
+- CSS for sleek, modern styling (no gradients, clean lines)
+- Semantic HTML5 & accessible inputs/buttons
+
+---
+
+## Installation & Setup
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/yourusername/react-todo-app.git
+   cd react-todo-app
+   npm install
+   npm start
+   npm run dev
+ --- 
+
+**Project Structure**
+
+/src
+  |-- /components
+       |-- TodoApp.jsx
+       |-- Navbar.jsx
+       |-- Footer.jsx
+  |-- /styles
+       |-- app.css
+       |-- navbar-footer.css
+  |-- App.jsx
+  |-- index.js
+README.md
+
+ ---
+
+   
+
