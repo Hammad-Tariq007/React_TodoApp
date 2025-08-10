@@ -14,7 +14,6 @@ A modern, minimalistic Todo List application built with **React** demonstrating 
 ## Demo
 
 <a href="https://ibb.co/hJkybBpN"><img src="https://i.ibb.co/C3qzgbxy/image.png" alt="image" border="0"></a>  
-*(Add your screenshot or GIF here to showcase the app)*
 
 ---
 
@@ -52,17 +51,17 @@ A modern, minimalistic Todo List application built with **React** demonstrating 
 
 **Project Structure**
 
-/src
-  |-- /components
-       |-- TodoApp.jsx
-       |-- Navbar.jsx
-       |-- Footer.jsx
-  |-- /styles
-       |-- app.css
-       |-- navbar-footer.css
-  |-- App.jsx
-  |-- index.js
-README.md
+/src <br>
+  |-- /components <br>
+       |-- TodoApp.jsx <br>
+       |-- Navbar.jsx <br>
+       |-- Footer.jsx <br>
+  |-- /styles <br>
+       |-- app.css <br>
+       |-- navbar-footer.css <br>
+  |-- App.jsx <br>
+  |-- index.js <br>
+README.md <br>
 
  ---
 
